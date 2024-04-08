@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TypeIt from 'typeit-react'
 import './App.css'
+import ScrollOut from 'scroll-out'
 
 const App = () => {
+  useEffect(() => {
+    ScrollOut({
+      targets: '.part', // part 클래스를 가진 요소를 대상으로 설정
+    })
+  }, [])
+
   return (
     <>
       <div className="app">
@@ -16,10 +23,9 @@ const App = () => {
               .pause(500)
               .type('John!')
               .options({
-                speed: 100, // 타이핑 속도
-                cursor: false, // 커서 숨김
-                fontSize: '36px', // 글씨 크기
-                // 원하는 다른 스타일 속성들을 추가할 수 있습니다.
+                speed: 100,
+                cursor: false,
+                fontSize: '36px',
               })
 
             // Remember to return it!
@@ -28,11 +34,11 @@ const App = () => {
         />
       </div>
       <div className="introbox">
-        <div className="part">
-          <img src="IMG_6287.jpg" alt="young"></img>
+        <div className="part" data-scroll>
+          <img src="IMG_6287.jpg" alt="young" />
         </div>
         <div className="part">
-          <img src="IMG_4733 2.jpg" alt="old"></img>
+          <img src="IMG_4733 2.jpg" alt="old" />
         </div>
         <div className="part"></div>
         <div className="part"></div>
