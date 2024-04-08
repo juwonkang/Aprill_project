@@ -4,7 +4,9 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <div>what the fucking </div>
+      <header className="w-full h-100 bg-black ">
+        <h2 className="text">logo</h2>
+      </header>
     </div>
   )
 }
