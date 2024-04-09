@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import TypeIt from 'typeit-react'
 import './App.css'
 import ScrollOut from 'scroll-out'
+import { Link } from 'react-router-dom'
 
 const App = () => {
   const [scrollOpacity, setScrollOpacity] = useState(1)
@@ -11,6 +12,7 @@ const App = () => {
     const handleScroll = () => {
       // 현재 스크롤 위치를 가져옵니다.
       const scrollY = window.scrollY || document.documentElement.scrollTop
+      // console.log(scrollY)
 
       // 예시: 스크롤 위치에 따라 투명도 조절
       // 스크롤 위치가 200px 이상이면 container1은 투명하게, container2는 불투명하게
@@ -71,25 +73,14 @@ const App = () => {
         </div>
         <div className="container2">
           <div className="maintext1">
-            <h1>
-              하나
-              <br />
-              세상 하나 뿐인 내 것
-            </h1>
-            <p>내가 좋아하는 선수를 더 오래 더 강렬하게 기억할수있습니다.</p>
+            <Link to="/shoppage">
+              <button className="btn" type="button">
+                바로 보러가기 ___
+              </button>
+            </Link>
           </div>
         </div>
-        <div className="container3">
-          <div className="part1">
-            <h1 className="maintext">MY BAG</h1>
-          </div>
-          <div className="part2">
-            <h1 className="maintext">ONE</h1>
-          </div>
-          <div className="part3">
-            <h1 className="maintext">ONLY</h1>
-          </div>
-        </div>
+        <div className="container3"></div>
       </div>
     </>
   )

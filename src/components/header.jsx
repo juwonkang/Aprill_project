@@ -13,11 +13,11 @@ const Header = () => {
       <header className="flex items-center justify-between py-4 px-8 fixed w-full top-0 z-10">
         {/* 로고 */}
         <div className="flex items-center">
-          <img src="baseballlogo.png" alt="Logo" className="h-8" />
+          <img src="baseballlogo.png" alt="Logo" className="h-10" />
 
           {/* 메뉴 */}
-          <nav className="ml-4">
-            <ul className="flex space-x-4">
+          <nav className="ml-8">
+            <ul className="flex space-x-10">
               <li>
                 {/* Link 컴포넌트를 사용하여 메뉴1을 클릭하면 /shoppage로 이동 */}
                 <Link
@@ -28,7 +28,7 @@ const Header = () => {
                       : 'text-white hover:text-gray-300'
                   }
                 >
-                  메뉴1
+                  쇼핑
                 </Link>
               </li>
               <li>
