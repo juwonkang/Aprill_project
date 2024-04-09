@@ -13,37 +13,56 @@ const App = () => {
   return (
     <>
       <div className="app">
-        <TypeIt
-          className="firsttext"
-          getBeforeInit={(instance) => {
-            instance
-              .type("Hi, I'm Alex")
-              .pause(750)
-              .delete(4)
-              .pause(500)
-              .type('John!')
-              .options({
-                speed: 100,
-                cursor: false,
-                fontSize: '36px',
-              })
-
-            // Remember to return it!
-            return instance
-          }}
-        />
-      </div>
-      <div className="introbox">
-        <div className="part" data-scroll>
-          <img src="IMG_6287.jpg" alt="young" />
+        <div className="container1">
+          <div className="part1">
+            <TypeIt
+              className="maintext"
+              options={{
+                speed: 100, // 글자 속도: 기본값은 100
+                lifeLike: true, // 텍스트가 한 번에 나타나도록 설정
+                cursor: false, // 깜빡이는 커서 제거
+              }}
+            >
+              MY BAG
+            </TypeIt>
+          </div>
+          <div className="part2">
+            <TypeIt
+              className="maintext"
+              options={{
+                speed: 100, // 글자 속도: 기본값은 100
+                lifeLike: true, // 텍스트가 한 번에 나타나도록 설정
+                cursor: false, // 깜빡이는 커서 제거
+              }}
+            >
+              ONE
+            </TypeIt>
+          </div>
+          <div className="part3">
+            <TypeIt
+              className="maintext"
+              options={{
+                speed: 100, // 글자 속도: 기본값은 100
+                lifeLike: true, // 텍스트가 한 번에 나타나도록 설정
+                cursor: false, // 깜빡이는 커서 제거
+              }}
+            >
+              ONLY
+            </TypeIt>
+          </div>
         </div>
-        <div className="part">
-          <img src="IMG_4733 2.jpg" alt="old" />
+        <div className="container2"></div>
+        <div className="container3">
+          <div className="part1">
+            <h1 className="maintext">MY BAG</h1>
+          </div>
+          <div className="part2">
+            <h1 className="maintext">ONE</h1>
+          </div>
+          <div className="part3">
+            <h1 className="maintext">ONLY</h1>
+          </div>
         </div>
-        <div className="part"></div>
-        <div className="part"></div>
-        <div className="part"></div>
-        <div className="part"></div>
       </div>
     </>
   )
