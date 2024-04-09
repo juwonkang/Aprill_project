@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <div className="bg-black">
-      <header className="flex items-center justify-between py-4 px-8">
+      <header className="flex items-center justify-between py-4 px-8 fixed w-full top-0 z-10">
         {/* 로고 */}
         <div className="flex items-center">
           <img src="baseballlogo.png" alt="Logo" className="h-8" />
