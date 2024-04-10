@@ -64,8 +64,28 @@ const Shoppage = () => {
       </div>
 
       <div className="purchasebox">
-        <div className="purchase">
-          <button className="purchasebtn">문의하기</button>
+        <h1>국산 신발 주머니 보조가방 실내화 가방 신주머니</h1>
+        <div
+          style={{ display: 'flex', justifyContent: 'space-between' }}
+          className="count"
+        >
+          <h2 style={{ color: 'red' }}>50%</h2>
+          <h2 style={{ color: 'red', fontWeight: 'bold' }}>35,000원</h2>
+        </div>
+        <div className="salebox">
+          <h1>ZD 고객을 위한 혜택</h1>
+          <hr />
+          <div
+            className="pointbox"
+            style={{ display: 'flex', justifyContent: 'space-between' }}
+          >
+            <h2>최대 적립포인트</h2>
+            <h2>1350원</h2>
+          </div>
+          <div
+            className="morepointbox"
+            style={{ border: '1px solid black', width: '300px', height: '100px' }}
+          ></div>
         </div>
       </div>
     </div>

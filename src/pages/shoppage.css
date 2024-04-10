@@ -49,9 +49,7 @@
   width: 600px;
   height: 700px;
   border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: 'center';
 }
 
 .purchasebtn {
