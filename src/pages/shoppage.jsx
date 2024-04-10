@@ -14,7 +14,7 @@ const Shoppage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNextSlide()
-    }, 25000)
+    }, 2500)
 
     return () => {
       clearInterval(interval)
@@ -43,7 +43,7 @@ const Shoppage = () => {
 
   return (
     <div className="container">
-      <div className="purchasebox">
+      <div className="imagebox">
         <div className="train">
           <div className="show" style={{ transform: `translateX(${translateValue}px)` }}>
             {trainCompartment.map((item, index) => (
@@ -62,7 +62,12 @@ const Shoppage = () => {
           </div>
         </div>
       </div>
-      <div className="imagebox"></div>
+
+      <div className="purchasebox">
+        <div className="purchase">
+          <button className="purchasebtn">문의하기</button>
+        </div>
+      </div>
     </div>
   )
 }

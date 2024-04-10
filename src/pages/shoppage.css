@@ -8,18 +8,12 @@
   align-items: center;
 }
 
-.purchasebox {
+.imagebox {
   width: 600px;
   height: 700px;
 
   overflow: hidden; /* 내용이 넘칠 때 숨김 처리 */
   position: relative; /* 내부 컴포넌트의 절대 위치를 사용하기 위해 */
-}
-
-.imagebox {
-  width: 600px;
-  height: 700px;
-  background-color: grey;
 }
 
 .show {
@@ -49,4 +43,19 @@
 .itemtitle {
   font-size: 30px;
   font-weight: bold;
+}
+
+.purchasebox {
+  width: 600px;
+  height: 700px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.purchasebtn {
+  background-color: lightgray;
+  font-size: 88px;
+  color: white;
 }
