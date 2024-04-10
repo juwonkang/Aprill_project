@@ -13,7 +13,9 @@ const Header = () => {
       <header className="flex items-center justify-between py-4 px-8 fixed w-full top-0 z-10">
         {/* 로고 */}
         <div className="flex items-center">
-          <img src="baseballlogo.png" alt="Logo" className="h-10" />
+          <Link to="/">
+            <img src="baseballlogo.png" alt="Logo" className="h-10" />
+          </Link>
 
           {/* 메뉴 */}
           <nav className="ml-8">
