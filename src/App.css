@@ -7,6 +7,9 @@
   width: 100%;
   height: 1000px;
   background-color: black;
+  overflow-y: scroll;
+  scroll-behavior: smooth; /* 부드러운 scroll snap 적용 */
+  scroll-snap-type: y mandatory; /* scroll snap 적용 */
 }
 
 .part1,
@@ -37,6 +40,7 @@
 .container1 {
   width: 100%;
   height: 1000px;
+  scroll-snap-align: start; /* scroll snap 적용 */
 }
 
 .container2 {
@@ -45,6 +49,7 @@
   background-size: cover;
   width: 100%;
   height: 1000px;
+  scroll-snap-align: start; /* scroll snap 적용 */
 }
 
 .btn {
@@ -67,6 +72,7 @@
   background-size: cover;
   width: 100%;
   height: 1000px;
+  scroll-snap-align: start; /* scroll snap 적용 */
 }
 
 /* 미디어 쿼리 추가 */
