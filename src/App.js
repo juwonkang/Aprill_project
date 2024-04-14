@@ -2,8 +2,24 @@ import React, { useEffect, useState } from 'react'
 import TypeIt from 'typeit-react'
 import './App.css'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 const App = () => {
+  const [items, setItems] = useState([])
+
+  useEffect(() => {
+    fetchItems()
+  }, [])
+
+  const fetchItems = async () => {
+    try {
+      const response = await axios.get('http://localhost:5000/api/items')
+      setItems(response.data)
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
   const [scrollOpacity, setScrollOpacity] = useState(1)
 
   useEffect(() => {
