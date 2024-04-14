@@ -36,7 +36,7 @@ const Header = () => {
               <li>
                 {/* 다른 메뉴들도 동일한 방식으로 처리 */}
                 <Link
-                  to="#"
+                  to="/commingsoon"
                   className={
                     isShopPage
                       ? 'text-black hover:text-gray-300'
@@ -48,7 +48,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/commingsoon"
                   className={
                     isShopPage
                       ? 'text-black hover:text-gray-300'
