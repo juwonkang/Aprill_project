@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals'
 import Header from './components/header'
 import ShopPage from './pages/shoppage'
 import Footter from './components/footter'
+import CommingSoon from './pages/commingsoon'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -19,6 +20,7 @@ root.render(
         {/* "/app" 경로로 들어왔을 때 App 컴포넌트를 렌더링 */}
         <Route path="/" element={<App />} />
         {/* 다른 경로들에 대한 Route 설정 */}
+        <Route path="/commingsoon" element={<CommingSoon />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
